@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #c7090c, #000000);
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #c7090c, #000000);
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  border-radius: 6px;
+  height: 60px;
+  padding-left: 30px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  color: rgb(245, 245, 245) !important;
+  font-weight: 500;
+  float: right;
+  text-align: left;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.manga-img {
+  margin: 5px;
+  padding: 5px;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+  display: inline;
+}
+
+.manga-desc {
+  color: white;
+  text-indent: 10px;
+  text-align: center;
+  font-weight: 300;
+  margin: 5px;
+}
+
+/* product */
+
+.product1 {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  margin-top: 50px;
+  height: 500px;
+}
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  height: 500px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.product-container {
+  padding: 0 5vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 60%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 300;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 350px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}

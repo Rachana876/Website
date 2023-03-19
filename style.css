@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #c7090c, #000000);
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #c7090c, #000000);
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  border-radius: 6px;
+  height: 60px;
+  padding-left: 30px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  color: rgb(245, 245, 245) !important;
+  font-weight: 500;
+  float: right;
+  text-align: left;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+#banner {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 3%;
+  color: #fff;
+}
+
+.promo-header {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.play-btn {
+  width: 45px;
+  margin: 20px;
+}
+
+#banner a {
+  color: white;
+  text-decoration: none;
+}
+
+.expand-img {
+  width: 100%;
+  padding-top: 5%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box {
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(images/onepiece.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: width 0.5s;
+}
+
+.img-box:nth-child(2) {
+  background: url(images/attackontitan.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(3) {
+  background: url(images/naruto.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(4) {
+  background: url(images/spyxfamily.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(5) {
+  background: url(images/tokyoghoul.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(6) {
+  background: url(images/parasyte.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(7) {
+  background: url(images/chainsawman.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(8) {
+  background: url(images/tokyorevengers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box h3 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  opacity: 0;
+  transition: width 0.5s, opacity 0.5s;
+}
+
+.img-box:hover {
+  width: 300px;
+  cursor: pointer;
+}
+
+.img-box:hover h3 {
+  opacity: 1;
+  bottom: 25px;
+}
+
+.anime-img {
+  margin: 30px;
+  padding: 30px;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+  display: inline;
+}
+.desc {
+  color: white;
+  text-indent: 10px;
+  text-align: center;
+  font-weight: 400;
+  width: 350px;
+  margin: 5px;
+}
